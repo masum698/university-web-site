@@ -1,0 +1,434 @@
+/* commmon and reset here */
+
+*{
+    margin:0; 
+    padding: 0;
+    list-style-type:none;
+    font-weight: 400;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.50%;
+    background-color: #fafafa;
+}
+body{
+    width: 130rem;
+    max-width: 100%;
+    background-color: #fff;
+    margin: auto;
+
+}
+h1{
+    text-transform: capitalize;
+}
+ 
+
+.btn{
+    border:none;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    text-transform:capitalize;
+}
+
+.section-center{
+    text-align: center;
+     
+    
+}
+.section-heading{
+        font-size: 3.5rem;
+        margin:1rem;
+        font-weight: bold;
+        padding-top:  5rem ;
+
+}
+/* commmon and reset here */
+/* header start here */
+header{
+    padding: 3rem 1rem;
+    background-image:  linear-gradient(rgb(0,0,0,0.8),
+    rgb(0,0,0,0.8)), url(images/campus.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+   
+     
+     
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+ 
+.nav-logo i{
+    font-size: 6rem;
+    padding: 0 3rem;
+    color:rgb(148, 146, 48);
+}
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    display: inline-block;
+}
+
+
+.nav-links li a{
+    text-transform: uppercase;
+    padding: 0 1rem;
+    font-size: 1.8rem;
+    margin: 1rem;
+    color: #fff;
+}
+.nav-menu ul li::after{
+    content: '';
+    width:  0%;
+    height: 2px;
+    background-color: #f4820d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-menu ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:white;
+    
+}
+.text-box h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+.text-desc{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif; 
+    margin:2rem 0;
+    color:rgb(223, 212, 212);
+}
+.text-btn{
+    margin-top: 5rem;
+     font-size: 2rem;
+     transition: 0.6s;
+}
+.text-btn:hover{
+    background-color: #af670a;
+    cursor: pointer;
+    
+}
+
+/* header end here */
+
+/* course start here */
+.course{
+    padding: 5rem 2rem;
+}
+
+ 
+
+.course-desc{
+    font-size: 1.5rem;
+    color:rgb(141, 132, 132);
+}
+.row{
+    
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course-col{
+    background-color: antiquewhite;
+    margin:1rem;
+    flex-basis: 31%;
+    padding: 2rem;
+    border-radius: .5rem;
+    transition: all 0.5s;
+}
+.course-col h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.course-col p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.course-col:hover{
+    box-shadow: 0.1rem 0.1rem 1rem;
+   
+}
+/* course end here */
+/* campus start here */
+
+.campus-col img{
+    width: 100%;
+    height: 500px;
+    border-radius: 0.8rem;
+}
+.campus{
+   
+
+}
+.campus-col{
+    flex-basis: 32%;
+    margin:1rem;
+    
+}
+.campus h3{
+    font-size: 2rem;
+
+    
+}
+
+/* campus end here */
+/* facilites start here */
+ 
+.facilites-col{
+    flex-basis: 32%;
+    margin:1rem;
+    
+}
+
+.facilites-desc{
+}
+.facilites-col img{
+    width: 100%;
+    height: 300px;
+    border-radius: 0.5rem;
+    display: block;
+    transition: all .5s;
+}
+.facilites-col img:hover{
+    transform: scale(1.1);
+}
+.facilites-col h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 2rem;
+    font-weight: bold;
+}
+.facilites-col p{
+    font-size: 1.5rem;
+    color:rgb(153, 140, 140);
+    text-align: justify;
+    margin:2rem 0;
+}
+
+/* facilites end here */
+
+/* comments start here */
+.comment-col img{
+    width:  100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.comment-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:bisque;
+    margin: 2rem;
+    padding:2rem;
+    border-radius: 1rem;
+    width: 40%;
+    
+}
+.comment-col .comment-desc{
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+.comment-col .comment-desc p, h2{
+    margin:1rem 0;
+}
+
+.icon{
+    color:rgb(255, 123, 0);
+}
+
+/* comments end here */
+
+.contact{
+    background-image: linear-gradient(rgb(0,0,0,0.7),
+    rgb(0,0,0,0.7)), url(images/building.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:8rem auto;
+    padding: 5rem 0;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    color:#fff;
+    border-radius: 0.8rem;
+    /* position: relative;     */
+}
+ /* contact start here */
+.contact .contact-heading{
+    font-size: 3rem;
+    margin:2rem
+}
+.contact p{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    width: 20%;
+    margin:0 auto;
+    padding:0.8rem;
+    transition: 0.5s;
+}
+.contact p:hover{
+    background-color: #ad640f;
+    
+}
+
+/* contact end */
+
+/* footer start here */
+footer{
+    text-align: center;
+    padding:  2rem;
+}
+footer .footer-heading{
+    font-size: 4rem;
+    margin: 2rem 0;
+
+}
+footer .footer-desc{
+    font-size: 1.5rem;
+    width: 50%;
+    color:gray;
+    margin: auto;
+    text-align: justify;
+}
+.social-link{
+    padding:1rem;
+    
+}
+.social-icon{
+    font-size: 3rem;
+    padding: 1rem;
+    color:black;
+}
+
+.social-icon:hover{
+    color: rgb(8, 83, 182);
+}
+footer .footer-p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+/* footer end here */
+
+
+
+
+
+
+
+
+/* media screen start here */
+@media (max-width: 992px){
+
+}
+
+
+@media (max-width: 768px){
+    
+    .text-box h1{
+        font-size: 4rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .campus-col img{
+        width: 600px;
+        height: 400px;
+    }
+
+    .comment-col{
+        width: 80%;
+    }
+
+    .contact{
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 576px){
+    html{
+        font-size: 48.5%;
+    }
+    .nav-menu{
+        flex-direction: column;
+    }
+    .nav-links{
+        margin:2rem 0 0;
+    }
+    .text-box h1{
+        font-size: 3.5rem;
+    }
+    .campus-col img{
+        width: 400px;
+        height: 400px;
+    }
+    .facilities{
+        width: 80%;
+        margin: auto;
+    }
+
+    .comment-col{
+        width: 90%;
+    }
+
+    .contact{
+        width: 80%;
+
+    }
+    .contact .contact-heading{
+        font-size: 2.5rem;
+    }
+    .contact p{
+        font-size: 1.8rem;
+        width: 25%;
+         
+        
+    }
+    
+    footer .footer-desc{
+        width:90%;
+        
+    }
+    footer .social-icon{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
